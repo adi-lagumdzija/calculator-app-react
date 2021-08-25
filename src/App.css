@@ -1,0 +1,24 @@
+input[type="text"]{
+    text-align:right;
+    height: 50px;
+    width: 492px;
+    font-size: xx-large;
+}
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+    background-color: white;
+}
+#clear{
+    grid-column: 1/3;
+}
+#result{
+    grid-column: 3/5;
+}
+#operator, #result{
+    background-color: rgb(67, 147, 252);
+}
+button{
+    font-size: large;
+}
